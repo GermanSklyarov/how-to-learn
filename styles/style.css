@@ -10,6 +10,7 @@
 }
 
 .header {
+  position: relative;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
@@ -143,6 +144,10 @@
   text-align: center;
 }
 
+.section-title_theme_dark {
+  color: #fff;
+}
+
 .section-subtitle {
   padding: 0;
   margin: 0 auto;
@@ -153,6 +158,10 @@
   text-align: center;
 }
 
+.section-subtitle_theme_dark {
+  color: #fff;
+}
+
 .table {
   display: flex;
   flex-wrap: wrap;
@@ -161,6 +170,10 @@
   padding: 0;
   margin: 0 auto;
   list-style: none;
+}
+
+.table_theme_dark {
+  color: #fff;
 }
 
 .table__cell_digits {
@@ -176,6 +189,10 @@
   font-weight: bold;
 }
 
+.table__heading_theme_dark {
+  color: #fff;
+}
+
 .table__text {
   padding: 0;
   margin: 0;
@@ -185,16 +202,16 @@
   font-weight: normal;
 }
 
+.table__text_theme_dark {
+  color: #fff;
+}
+
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
-}
-
-.theme_dark {
-  color: #fff;
 }
 
 .feynman {
@@ -282,6 +299,7 @@
   width: 90%;
   margin: 0 auto;
   min-height: 250px;
+  color: #fff;
 }
 
 .footer__column_content_copyright {
