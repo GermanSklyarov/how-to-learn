@@ -340,11 +340,7 @@
 }
 
 .footer__social-icon {
-  display: inline-block;
   width: 16px;
   height: 16px;
   margin-right: 10px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
