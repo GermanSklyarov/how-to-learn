@@ -20,7 +20,6 @@
 }
 
 .logo {
-  height: 32px;
   width: 183px;
 }
 
@@ -29,13 +28,18 @@
   top: 30px;
   left: 64px;
   z-index: 3;
+  height: 32px;
+}
+
+.logo_place_footer {
+  height: 35px;
 }
 
 .header__title {
   padding: 0;
   margin: 0;
   align-self: center;
-  width: 730px;
+  max-width: 730px;
   margin-left: 64px;
   z-index: 3;
   line-height: 96px;
@@ -46,7 +50,7 @@
 .header__subtitle {
   padding: 0;
   margin: 0;
-  width: 388px;
+  max-width: 388px;
   position: absolute;
   bottom: 30px;
   left: 64px;
@@ -176,7 +180,7 @@
   color: #fff;
 }
 
-.table__cell_digits {
+.table__cell {
   width: 250px;
   margin-top: 60px;
 }
@@ -215,18 +219,18 @@
 }
 
 .feynman {
-  background-color: #f2f2f2;
+  background: url('../images/feynman.png') left bottom no-repeat #f2f2f2;
   padding-top: 100px;
   position: relative;
   z-index: 0;
   box-sizing: border-box;
-  height: 890px;
+  min-height: 890px;
 }
 
 .feynman__title {
   padding: 0;
   margin: 0 auto;
-  width: 648px;
+  max-width: 648px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
@@ -258,15 +262,6 @@
   content: " →";
 }
 
-.feynman__image {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 867px;
-  height: 637px;
-  z-index: -1;
-}
-
 .kaufman {
   position: relative;
   background-color: #1f1f1f;
@@ -283,9 +278,12 @@
   width: 877px;
   height: 877px;
   z-index: -1;
+  background: url('../images/kaufman-triangle.svg') no-repeat;
+  background-size: cover;
 }
 
 .footer {
+  display: flex;
   padding-top: 60px;
   padding-bottom: 40px;
   background-color: #1f1f1f;
@@ -298,7 +296,6 @@
   justify-content: space-between;
   width: 90%;
   margin: 0 auto;
-  min-height: 250px;
   color: #fff;
 }
 
@@ -328,6 +325,9 @@
 .footer__column-links {
   display: flex;
   flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
   margin-bottom: 16px;
 }
 
@@ -340,7 +340,11 @@
 }
 
 .footer__social-icon {
+  display: inline-block;
   width: 16px;
   height: 16px;
   margin-right: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
