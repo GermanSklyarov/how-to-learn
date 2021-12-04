@@ -2,5 +2,6 @@
   height: 620px;
   width: 608px;
   margin: 0 48px 0 0;
-  overflow: hidden;
+  object-fit: cover;
+  object-position: top left;
 }

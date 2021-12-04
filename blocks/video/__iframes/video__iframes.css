@@ -1,5 +1,9 @@
 .video__iframes {
+  display: flex;
+  column-gap: 20px;
   width: 1050px;
   margin: 50px auto 0 auto;
-  font-size: 0; 
+  padding: 0;
+  font-size: 0;
+  list-style: none;
 }
